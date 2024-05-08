@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop Hamburger Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bb15f4d644.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="headerInnerWrapper">
+    <nav>
+      <button id="menuBtn"><span class="hamburger"></span>Meny</button>
+      <ul id="menu">
+        <li>
+          <div class="menuItemWrapper"><a href="#">Förskola, skola och utbildning</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li>
+              <div class="menuItemWrapper sansregular"><a href="#">Förskola</a><button class="toggleBtn toggleBtnTwo">+</button></div>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Så här funger förskolan</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Förskolor</a><button class="toggleBtn toggleBtnThree">+</button></div>
+                  <ul class="submenu">
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Dalhem förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Endre förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Eskelhem förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Fole förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Fårö förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Fårösund förskola</a></div></li>
+                    <li><div class="menuItemWrapper sansregular"><a href="#">Forskolan Asken </a></div></li>
+                  </ul>
+                </li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Omsorg och stöd</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Ansöka om eller säga upp plats</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Avgifter och regler</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Pedagogisk omsorg - familjedaghem</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Barnomsorg på obekväm arbetsid</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Öppen förskola</a></div></li>
+              </ul>
+            </li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Grundskola</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Så här funger grundskolan</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Grundskolor i vår region</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Anpassad grundskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Förskoleklass</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Välj skola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Betyg, bedömning och utvecklingssamtal</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Fritidshem</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Läsårstider och lov</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Skolplikt, frånvaro och ledighet</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Elevpraktik</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Gymnasium</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Gymnasieskolor i regionen</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Gymnasievalet</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Gymnasieutbildningar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Teknikcollege</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Kombinera idrott och studier</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Anpassad gymnasieskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Byta skola eller program</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Betyg och bedömning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Studiekonomi</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Läsårstider, lov och ledighet</a></div></li>
+            </ul>
+          <li><div class="menuItemWrapper sansregular"><a href="#">Maten i förskolan och skolan</a></div></li>
+          <li><div class="menuItemWrapper sansregular"><a href="#">Elevhälsa och särskilt stöd</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Vilket stöd finns det?</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Åtgärdsprogram</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Specialpedagogisk kompetens</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Tycker du att skolan krånglar?</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Resursskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Anpassad gymnasieskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Elevhälsan</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                  <li><div class="menuItemWrapper sansregular"><a href="#">Skolkurator och skopsykolog</a></div></li>
+                  <li><div class="menuItemWrapper sansregular"><a href="#">Skolsköterska och skolläkare</a></div></li>
+                </ul>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Betyg och bedömning</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Mobbning och likabehandling</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Modersmål</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Studie- och yrkesvägledning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Vuxenutbildning</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Om vuxenutbildning</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Kurser och utbildningar för vuxna</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">SFI - Svenska för invandrare</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Anpassad vuxenutbildning</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Studie- och yrkesvägledning för vuxna</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Studier i annan kommun än din hemkommun</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Validering</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Studieekonomi</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Lärcentrum</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Betyg och bedömning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Yrkeshögskolan och högskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Folkhögskola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Kommunens aktivitetsansvar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Försäkringar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Regionen som skolkommun</a></div></li>
+            </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Omsorg och stöd</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Våld i nära relationer</a></a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Kvinnojour</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Socialjour</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Trygg och säker</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Din krisberedskap</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Öva din egen krisberedskap</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Varning och informationsmeddelande</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Förebygg effekter av nathurhändelser</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Beredsskapsveckan</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Försäkringar</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Ansvarsförsäkring</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Olycksfallsförsäkring</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Tjänsteförsäkring</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Räddningstjänst</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Familj, barn och ungdom</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">För dig som är barn eller ungdom</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Stöd till familjen, barn och ungdom</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Familjestöd</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Familjerådgivning</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Seperation och skilsmässa</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Barn och unga som inte kan bo hemma</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Familjerätten</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Är du orolig för ett barn?</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Är du orolig för en vuxen?</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Ungdomsvård</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Ekonomi och ekonomiskt bistånd</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Budget och skuldrådgivning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Försörjningsstöd</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Stöd till äldre</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Senior i regionen</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Hjälp i hemmet för äldre</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Demens</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Boende för äldre</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Funktionsnedsättning</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Skadligt bruk och beroende</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Anhörig</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Ny i Sverige</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Sfi - svenska för invandrare</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Inskrivning av barn och ungdomar i skola</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Ensamkommande barn och ungdomar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Tolk för dig som är ny i sverige</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Förälder i nytt land</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Transport och besök</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Hemlös</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Hemsjukvård</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Rehabilitering, hjälpmedel och habilitering</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Bostadsanpassning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Habilitering</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Hjälpmedel</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Hörselnedsättning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Synnedsättning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Tolk</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Välfärdsteknik</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Medicinskt ansvarig sjuksköterska</a></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Vård och hälsa</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">1177</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Mottagningar och vägen till vården</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Söka vård</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Vårdcentraler</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Lasarett</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Övriga mottagningar</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Tandvård</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Akut tandvård</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Välja tandläkare</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Tyck till om tandvården</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Psykisk hälsa</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Sök vård</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Fem tips för psykisk hälsa</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Regler och rättigheter</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Rehabilitering, hjälpmedel och rättigheter</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Skadligt bruk och beroende</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Folkhälsa</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Folkhälsostatistik</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Screeningprogram</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Forskning och utveckling</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Hur går det för vården?</a></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Kultur och fritid</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Bibliotek</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Bibliotek i regionen</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Biblioteksutveckling</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Bokning, bidrag och föreningsliv</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Idrott, motion och friluftsliv</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Simhallar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Ishallar</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Lekplatser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Badplatser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Grillplatser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Utegym</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Parker och grönområden</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kultur</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Stöd, stipendier och priser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Barn- och ungdomskultur</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Offentlig konst</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Dans</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Skapa dans</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Musik</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Teater</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Film</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Filmfond</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Konst</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kulturskola</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Studieförbund</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Skadligt bruk och beroende</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Ung i regionen</a></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Bygga, bo och miljö</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Anmäl klagomålsom påverkar miljö och hälsa</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Avfall och återvinning</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Avgifter, regler och abonnemang</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Abonnemang för avfall</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Taxor och bestämmelser</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Avfall från företag</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Nya sophämtningen</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Betalsopsäck</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Farligt avfall</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Hämtning av avfall</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Kompostering av hushållsavfall</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Källsortering och återvinning</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Bostäder och boendemiljö</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Bygga nytt, ändra eller riva</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Djur och husdjur</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Besvär på grund av djur</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Husdjur</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Energi</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Energi- och klimatrådgivning</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Vindkraft</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Värmepumpar</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Mer information om bergvärme</a></div></li>
+              </ul>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kartor och mätning</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kemikalier</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Naturvård och parker</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Betesmarker</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Naturtyper</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Träd</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Ängesmark</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Räddningstjänst, brandskudd, sotning</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Samhällsplanering</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Vatten och avlopp</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Avgifter och bestämmelser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Dricksvatten</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Avlopp</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Dagvatten</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Grundvatten</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Provpumpning av grundvatten</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Tillståndsprövning</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Planer och anvisningar</a></div></li>
+            </ul>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Jobb och företagande</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Jobba i Regionen</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Lediga jobb</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Timvikarie</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie hälso- och sjukvård</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie trafik, gator och parker</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie hemsjukvård</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Sommarvikarie assistent</a></div></li>
+              </ul>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Så är det att jobba hos oss</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Timvikarie</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Vägledning till jobb och studier</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Starta och driva företag</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Tillstånd, regler och tillsyn</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Mark och lokaler</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Lokaler</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Mark och exploatering</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Energi- och klimatrådgivning</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Inköp och upphandling</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Ta emot praktikanter och bidra till utbildningar</a></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Trafik, gator och parker</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Renhållning och vinterväghållning</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Snöröjning</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Trafik och gator</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Parker och allmänna platser</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Hamnar</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kollektivtrafik</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Busstidtabeller</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Parkera och ladda</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Husbil och ställplatser</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Laddplatser och laddinfrastruktur</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Parkering och avgifter</a><button class="toggleBtn toggleBtnThree">+</button></div></li>
+              <ul class="submenu">
+                <li><div class="menuItemWrapper sansregular"><a href="#">Betala parkeringsavgift så här</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Parkeringsavgifter</a></div></li>
+                <li><div class="menuItemWrapper sansregular"><a href="#">Återbetalning av parkeringsavgift</a></div></li>
+              </ul>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Trafikregler och trafiksäkerhet</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Tillstånd på gatu- och allmän platsmark</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Cykel</a></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menuItemWrapper sansregular"><a href="#">Region och politik</a><button class="toggleBtn">+</button></div>
+          <ul class="submenu">
+            <li><div class="menuItemWrapper sansregular"><a href="#">Kontakta oss</a><button class="toggleBtn toggleBtnTwo">+</button></div></li>
+            <ul class="submenu">
+              <li><div class="menuItemWrapper sansregular"><a href="#">Så kontaktar du oss</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Besök oss</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Synpunkter och förslag</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Kontakta politiker</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Felanmälan</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Journummer</a></div></li>
+              <li><div class="menuItemWrapper sansregular"><a href="#">Press och media</a></div></li>
+            </ul>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Regionfakta och statistik</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Regionens uppdrag och mål</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Diarium, allmänna handlingar och arkiv</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Press- och informationsmaterial</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Om webbplatsen</a></div></li>
+            <li><div class="menuItemWrapper sansregular"><a href="#">Personuppgifter - GDPR</a></div></li>
+          </ul>
+        </li>
+        <div class="bottomMenuWrapper">
+          <p><i class="fa-regular fa-comment" style="color: #ffffff;"></i>Kontakta oss</p>
+          <p><i class="fa-regular fa-file-lines" style="color: #ffffff;"></i>Anslagstavla</p>
+          <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Kartportal</p>
+          <p><i class="fa-solid fa-earth-europe" style="color: #ffffff;"></i></i>Fler språk - Other languages</p>
+          <p><i class="fa-solid fa-volume-low" style="color: #ffffff;"></i>Lyssna</p>
+          <p><i class="fa-solid fa-person" style="color: #ffffff;"></i>Tillgänglighet</p>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <main>
+    <div class="switchTextWrapper">
+      <select id="styleSelector">
+        <option value="sansregular">Prototyp 1 (sans-serif, regular)</option>
+        <option value="sanssmall">Prototyp 2 (sans-serif, small)</option>
+        <option value="sansbig">Prototyp 3 (sans-serif, big)</option>
+        <option value="serifregular">Prototyp 4 (serif, regular)</option>
+        <option value="serifsmall">Prototyp 5 (serif, small)</option>
+        <option value="serifbig">Prototyp 6 (serif, big)</option>
+      </select>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

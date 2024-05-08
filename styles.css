@@ -1,0 +1,267 @@
+:root {
+  --color1: #007864;
+  --color2: #004439;
+  --color3: #00362d;
+  --color4: #004887;
+  --color5: #035297;
+  --color6: #b9d9f3;
+  --color7: #98c5ea;
+  --color8: #d1e5f5;
+  --color9: #1e6aac;
+  --color10: #e5eff7;
+
+  --xHeight: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color1);
+  padding: 0px 20px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the menu to the right */
+}
+
+#menuBtn {
+  color: white;
+  border: none;
+  background-color: var(--color2);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 60px;
+  min-height: 60px;
+  width: 193px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+#menuBtn:hover {
+  background-color: var(--color3);
+}
+
+.hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  
+  position: relative;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger:before {
+  top: -7px;
+}
+
+.hamburger:after {
+  bottom: -7px;
+}
+
+nav {
+  position: relative;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute; /* Position the menu absolutely */
+  top: 0px; /* Position the menu below the button */
+  right: 0px;
+  background-color: var(--color4);
+  /*z-index: 1000;*/ /* Ensure the menu is above other content */
+  width: 520px;
+  padding-top: 100px;
+}
+
+#menu.show {
+  display: block;
+}
+
+#menu li {
+  display: block;
+}
+
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.submenu {
+  display: none;
+  background-color: var(--color6);
+  padding-left: 0;
+}
+.submenu a {
+  padding-left: 20px;
+}
+.submenu li div > a {
+  color: black !important;
+  margin-left: 15px;
+}
+.submenu .submenu li div > a {
+  color: black !important;
+  margin-left: 30px;
+}
+.submenu .submenu {
+  background-color: var(--color8);
+}
+.submenu .submenu .submenu {
+  background-color: var(--color10);
+}
+
+#menu li.active .submenu {
+  display: block;
+}
+
+.menuItemWrapper {
+  padding: 0px 0px 0px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--xHeight);
+  border-bottom: thin solid var(--color9);
+}
+.menuItemWrapper:hover a {
+  text-decoration: underline !important;
+}
+.toggleBtn {
+  width: var(--xHeight);
+  height: var(--xHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color4);
+  border: none;
+  border-radius: 0;
+  font-size: 2rem;
+  color: white;
+  border-bottom: thin solid var(--color9);
+}
+.toggleBtnTwo {
+  background-color: var(--color6);
+  color: var(--color5);
+}
+.toggleBtnThree {
+  background-color: var(--color8);
+  color: var(--color5);
+}
+.toggleBtnFour {
+  background-color: var(--color10);
+  color: var(--color5);
+}
+.toggleBtn:hover {
+  background-color: var(--color5);
+}
+.toggleBtnTwo:hover {
+  background-color: var(--color7);
+}
+.toggleBtnThree:hover {
+  background-color: var(--color7);
+}
+.toggleBtnFour:hover {
+  background-color: var(--color7);
+}
+
+.show {
+  display: block !important;
+}
+
+.largerFont {
+  padding-bottom: 9px;
+  font-size: 3rem !important;
+}
+
+.bottomMenuWrapper {
+  background-color: var(--color9);
+  min-height: 200px;
+  padding: 20px 50px;
+}
+.bottomMenuWrapper p {
+  color: white;
+}
+
+.fa-solid, .fa-regular {
+  margin-right: 20px;
+}
+
+.blueMenuButton {
+  background-color: var(--color4) !important;
+}
+
+.bigText {
+  font-size: 1.5rem;
+  transform: scaleY(0.8);
+}
+
+
+.switchTextWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.switchTextWrapper select {
+  font-size: 1rem;
+}
+.sansregular {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.sanssmall {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.sansbig {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.serifregular {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
+}
+.serifsmall {
+  font-family: "Roboto Serif", serif;
+  font-size: 14px;
+}
+.serifbig {
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
+}
+
+.mainMenuFont {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 19px !important;
+}
+
+.headerInnerWrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
